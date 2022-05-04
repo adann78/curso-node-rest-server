@@ -44,7 +44,7 @@ const usuariosPost=async(req, res=response)=> {
 const usuariosPut=async(req, res=response)=> {
 
     const { id }=req.params;
-    const { password, google, ...resto }=req.body;
+    const { password, google,correo, ...resto }=req.body;
 //TODO validar contra bd
 if( password ){
     //Encriptar contraseña
